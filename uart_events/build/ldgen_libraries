@@ -1,4 +1,4 @@
-D:/uart_idf/uart_events/build/esp-idf/xtensa/libxtensa.a
+D:/uart_idf/uart_events/build/esp-idf/riscv/libriscv.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 D:/uart_idf/uart_events/build/esp-idf/esp_pm/libesp_pm.a
 D:/uart_idf/uart_events/build/esp-idf/mbedtls/libmbedtls.a
@@ -30,19 +30,16 @@ D:/uart_idf/uart_events/build/esp-idf/esp_driver_uart/libesp_driver_uart.a
 D:/uart_idf/uart_events/build/esp-idf/app_trace/libapp_trace.a
 D:/uart_idf/uart_events/build/esp-idf/esp_event/libesp_event.a
 D:/uart_idf/uart_events/build/esp-idf/nvs_flash/libnvs_flash.a
-D:/uart_idf/uart_events/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
-D:/uart_idf/uart_events/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 D:/uart_idf/uart_events/build/esp-idf/sdmmc/libsdmmc.a
-D:/uart_idf/uart_events/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
-D:/uart_idf/uart_events/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a
-D:/uart_idf/uart_events/build/esp-idf/esp_driver_dac/libesp_driver_dac.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+D:/uart_idf/uart_events/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 D:/uart_idf/uart_events/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
+D:/uart_idf/uart_events/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
 D:/uart_idf/uart_events/build/esp-idf/driver/libdriver.a
 D:/uart_idf/uart_events/build/esp-idf/esp_phy/libesp_phy.a
 D:/uart_idf/uart_events/build/esp-idf/esp_vfs_console/libesp_vfs_console.a
@@ -77,7 +74,6 @@ D:/uart_idf/uart_events/build/esp-idf/fatfs/libfatfs.a
 D:/uart_idf/uart_events/build/esp-idf/json/libjson.a
 D:/uart_idf/uart_events/build/esp-idf/mqtt/libmqtt.a
 D:/uart_idf/uart_events/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a
-D:/uart_idf/uart_events/build/esp-idf/perfmon/libperfmon.a
 D:/uart_idf/uart_events/build/esp-idf/rt/librt.a
 D:/uart_idf/uart_events/build/esp-idf/spiffs/libspiffs.a
 D:/uart_idf/uart_events/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
