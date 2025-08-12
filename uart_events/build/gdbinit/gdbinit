@@ -1,2 +1,2 @@
-source D:/uart_idf/uart_events/build/gdbinit/symbols
-source D:/uart_idf/uart_events/build/gdbinit/connect
+source C:/Espressif/frameworks/uart_idf/uart_events/build/gdbinit/symbols
+source C:/Espressif/frameworks/uart_idf/uart_events/build/gdbinit/connect

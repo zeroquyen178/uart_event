@@ -12,9 +12,9 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "driver/uart.h"
+#include "driver/gpio.h"
 #include "esp_log.h"
-
-static const char *TAG = "uart_events";
+static const char *TAG = "uart_led_state";
 
 /**
  * This example shows how to use the UART driver to handle special UART events.
@@ -30,6 +30,7 @@ static const char *TAG = "uart_events";
  */
 
 #define EX_UART_NUM UART_NUM_0
+#define led_pin (GPIO_NUM_2)
 #define PATTERN_CHR_NUM    (3)         /*!< Set the number of consecutive and identical characters received by receiver which defines a UART pattern*/
 
 #define BUF_SIZE (1024)
@@ -54,8 +55,18 @@ static void uart_event_task(void *pvParameters)
             case UART_DATA:
                 ESP_LOGI(TAG, "[UART DATA]: %d", event.size);
                 uart_read_bytes(EX_UART_NUM, dtmp, event.size, portMAX_DELAY);
-                ESP_LOGI(TAG, "[DATA EVT]:");
-                uart_write_bytes(EX_UART_NUM, (const char*) dtmp, event.size);
+                if(strncmp((char*)dtmp,"LEDON",5)==0)
+                {
+                    gpio_set_level(led_pin,1);
+                    ESP_LOGI(TAG,"Led is turned on");
+                }
+                else if (strncmp((char*)dtmp,"LEDOFF",6)==0)
+                {
+                    gpio_set_level(led_pin,0);
+                    ESP_LOGI(TAG,"led is turned off");
+                }
+                // ESP_LOGI(TAG, "[DATA EVT]:");
+                // uart_write_bytes(EX_UART_NUM, (const char*) dtmp, event.size);
                 break;
             //Event of HW FIFO overflow detected
             case UART_FIFO_OVF:

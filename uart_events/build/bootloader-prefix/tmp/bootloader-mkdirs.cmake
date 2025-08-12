@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.4.2/components/bootloader/subp
   file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.4.2/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/uart_idf/uart_events/build/bootloader"
-  "D:/uart_idf/uart_events/build/bootloader-prefix"
-  "D:/uart_idf/uart_events/build/bootloader-prefix/tmp"
-  "D:/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/uart_idf/uart_events/build/bootloader-prefix/src"
-  "D:/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/tmp"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/src"
+  "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Espressif/frameworks/uart_idf/uart_events/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
