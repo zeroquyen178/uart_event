@@ -30,7 +30,7 @@ static const char *TAG = "uart_led_state";
  */
 
 #define EX_UART_NUM UART_NUM_0
-#define led_pin (GPIO_NUM_2)
+#define led_pin (GPIO_NUM_8)
 #define PATTERN_CHR_NUM    (3)         /*!< Set the number of consecutive and identical characters received by receiver which defines a UART pattern*/
 
 #define BUF_SIZE (1024)
